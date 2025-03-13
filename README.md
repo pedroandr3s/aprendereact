@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Cuaderno - Gestión de Finanzas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cuaderno es una aplicación web para la gestión de ingresos y gastos de un local. Permite registrar movimientos financieros y visualizar un historial detallado. La aplicación está integrada con Firebase para almacenar la información de manera segura y en tiempo real.
 
-## Available Scripts
+## Características ✨
 
-In the project directory, you can run:
+- **Registro de ingresos y gastos** 💰
+- **Historial de transacciones** 📛
+- **Conexión con Firebase para almacenamiento en la nube** ☁️
+- **Interfaz simple y fácil de usar** 🖥️
+- **Desplegado en GitHub Pages** 🌍
 
-### `npm start`
+## Tecnologías utilizadas 🛠️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React ⚛️
+- Firebase 🔥
+- Tailwind CSS 🎨
+- Styled-components 💅
+- GitHub Pages 🚀
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estructura del Proyecto 
 
-### `npm test`
+```
+cuaderno/
+│── build/              # Archivos generados tras la compilación
+│── node_modules/       # Dependencias instaladas
+│── public/            # Archivos estáticos (favicon, manifest, etc.)
+│── src/               # Código fuente del proyecto
+│   ├── components/    # Componentes reutilizables
+│   │   ├── Expense.js
+│   │   ├── Income.js
+│   │   ├── TransactionForm.js
+│   │   ├── TransactionList.js
+│   │   ├── historial.js
+│   │   ├── firebaseConfig.js
+│   ├── styles/        # Archivos de estilo
+│   ├── utils/         # Utilidades y funciones auxiliares
+│   ├── App.js         # Componente principal
+│   ├── index.js       # Punto de entrada de la aplicación
+│── .gitignore         # Archivos y carpetas a ignorar en Git
+│── package.json       # Configuración del proyecto y dependencias
+│── postcss.config.js  # Configuración de PostCSS
+│── tailwind.config.js # Configuración de Tailwind CSS
+│── README.md          # Documentación del proyecto
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalación y uso 🏷️
 
-### `npm run build`
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/pedroandr3s/cuaderno.git
+   cd cuaderno
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instala las dependencias:
+   ```sh
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Configura Firebase:
+   - Crea un proyecto en [Firebase Console](https://console.firebase.google.com/).
+   - Agrega tu archivo `firebaseConfig.js` con la configuración de Firebase.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Inicia la aplicación en modo desarrollo:
+   ```sh
+   npm start
+   ```
 
-### `npm run eject`
+5. Para desplegar en GitHub Pages:
+   ```sh
+   npm run deploy
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Uso 🚀
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Ingresa los datos de los ingresos y gastos.
+- Consulta el historial para visualizar los movimientos financieros.
+- Los datos se almacenan en Firebase en tiempo real.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo 🎥
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Puedes ver la aplicación en funcionamiento aquí: [Cuaderno](https://pedroandr3s.github.io/cuaderno/)
 
-## Learn More
+## Autor ✍️
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Desarrollado por **Pedro Andrés**. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribuciones 🤝
 
-### Code Splitting
+Las contribuciones son bienvenidas. ¡Siéntete libre de hacer un fork y mejorar el proyecto!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licencia 📚
 
-### Analyzing the Bundle Size
+Este proyecto está bajo la licencia MIT.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
